@@ -1,0 +1,92 @@
+.social-links {
+  width: 75%;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.social-links a {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px; /* Adjust as needed */
+  border-color: #454555;
+  background-color: #caa8a8; /* Example - use your desired color */
+  color: #333333;
+  text-decoration: none;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.social-links a:hover {
+  background-color: #a7a8cd; /* Example - use your desired hover color */
+}
+
+.social-links .icon {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  height: 2rem;
+}
+
+.social-links .label {
+  display: inline-block;
+  width: auto;
+}
+
+.profile-pic {
+  border: 3px solid #9999cc; /* Add a border - adjust color/thickness as needed */
+  border-radius: 10px; /* Add rounded corners - adjust radius as needed */
+  padding: 0px; /* Add some internal padding */
+  text-align: center; /* Center the content within the card */
+  width: 50%; /* Set the height of the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  margin: 0 auto; /* Center the card horizontally */
+  max-width: 250px;
+}
+
+body {
+  background-color: lavender;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex; /* Enable flexbox layout for the body */
+  justify-content: center; /* Center horizontally */
+  min-height: 100vh; /* Ensure body takes up full viewport height */
+}
+
+h1 {
+  font-size: 2rem;
+  color: darkslategray;
+  font-family: "Brush Script MT", cursive;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.crypto {
+  text-align: center; /* Center the content within the card */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content vertically */
+  margin: 0 auto; /* Center the card horizontally */
+  padding: 0.5em;
+}
+
+.crypto .card {
+  background-color: #caa8a8;
+  width: 25rem;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.crypto .icon {
+  height: 2rem;
+  margin: 5px;
+}
+/* Existing styles... */
