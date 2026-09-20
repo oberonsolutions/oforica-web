@@ -1,10 +1,24 @@
 :root {
+  color-scheme: light dark;
   --ink: #1a1f24;
-  --muted: #4a5560;
-  --line: #d8dde3;
-  --bg: #f6f4f0;
+  --muted: #3f4a54;
+  --line: #d4d0c8;
+  --bg: #efebe3;
   --paper: #fffdf8;
-  --link: #1f4d3a;
+  --link: #145238;
+  --focus: #0b3d28;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f3efe6;
+    --muted: #c5ccd3;
+    --line: #3a4450;
+    --bg: #101418;
+    --paper: #1b2229;
+    --link: #9ad4b5;
+    --focus: #c8eed8;
+  }
 }
 
 *,
@@ -15,6 +29,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4.25rem;
 }
 
 body {
@@ -29,6 +44,22 @@ body {
 .wrap {
   width: min(42rem, calc(100% - 2.5rem));
   margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  z-index: 2;
+  padding: 0.4rem 0.7rem;
+  color: var(--paper);
+  background: var(--ink);
+  text-decoration: none;
+  transform: translateY(-180%);
+}
+
+.skip-link:focus {
+  transform: none;
 }
 
 .site-header {
@@ -72,6 +103,11 @@ nav a:hover,
 .inpage-links a:hover,
 a:hover {
   text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
 }
 
 section {
