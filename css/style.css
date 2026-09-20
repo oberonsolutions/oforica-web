@@ -10,8 +10,8 @@
   --link-hover: #0f3f27;
   --focus: #0b3d28;
   --grid: rgba(35, 31, 32, 0.07);
-  --hero-a: rgba(31, 107, 69, 0.13);
-  --hero-b: rgba(176, 132, 64, 0.1);
+  --hero-a: rgba(31, 107, 69, 0.16);
+  --hero-b: rgba(176, 132, 64, 0.12);
   --shadow: 0 12px 40px rgba(35, 31, 32, 0.06);
   --header-bg: rgba(247, 243, 235, 0.88);
   --font-sans: "Source Sans 3", "Source Sans Pro", system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -30,8 +30,8 @@
     --link-hover: #b6e4c8;
     --focus: #c8eed8;
     --grid: rgba(243, 239, 230, 0.06);
-    --hero-a: rgba(90, 160, 118, 0.16);
-    --hero-b: rgba(196, 156, 82, 0.1);
+    --hero-a: rgba(90, 160, 118, 0.2);
+    --hero-b: rgba(196, 156, 82, 0.12);
     --shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
     --header-bg: rgba(22, 20, 16, 0.88);
   }
@@ -117,18 +117,9 @@ body {
 
 .brand-mark {
   display: block;
-  width: 3.35rem;
-  height: 2.2rem;
-  overflow: hidden;
-  flex: 0 0 auto;
-}
-
-.brand-mark img {
-  display: block;
-  width: 5.45rem;
+  width: 2.05rem;
   height: auto;
-  max-width: none;
-  margin: -0.12rem 0 0 -1.05rem;
+  flex: 0 0 auto;
 }
 
 .wordmark {
@@ -211,7 +202,8 @@ section {
     linear-gradient(var(--grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid) 1px, transparent 1px);
   background-size: 44px 44px;
-  mask-image: radial-gradient(ellipse at 50% 28%, #000 18%, transparent 72%);
+  mask-image: radial-gradient(ellipse at 50% 28%, #000 22%, transparent 74%);
+  opacity: 0.9;
 }
 
 .hero-inner {

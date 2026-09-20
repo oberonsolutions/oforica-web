@@ -37,7 +37,7 @@ jobs:
           cp index.html CNAME _site/
           cp css/style.css _site/css/
           cp js/copy.js js/site.js _site/js/
-          cp assets/oforica.svg _site/assets/
+          cp assets/oforica.svg assets/oforica-mark.svg _site/assets/
       - name: Confirm artifact allowlist
         run: |
           echo "Staged files:"
@@ -48,6 +48,7 @@ jobs:
           test -f _site/js/copy.js
           test -f _site/js/site.js
           test -f _site/assets/oforica.svg
+          test -f _site/assets/oforica-mark.svg
           test ! -d _site/badangel2311
           test ! -d _site/img
       - name: Confirm retired strings are gone
@@ -75,7 +76,7 @@ jobs:
           cp index.html CNAME _site/
           cp css/style.css _site/css/
           cp js/copy.js js/site.js _site/js/
-          cp assets/oforica.svg _site/assets/
+          cp assets/oforica.svg assets/oforica-mark.svg _site/assets/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
