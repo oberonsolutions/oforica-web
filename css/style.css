@@ -110,23 +110,15 @@ body {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
   color: var(--ink);
   text-decoration: none;
-}
-
-.brand-mark {
-  display: block;
-  width: 2.05rem;
-  height: auto;
-  flex: 0 0 auto;
 }
 
 .wordmark {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 1.15rem;
-  letter-spacing: -0.02em;
+  font-size: 1.2rem;
+  letter-spacing: -0.03em;
 }
 
 nav {
@@ -212,11 +204,8 @@ section {
   animation: rise 0.7s ease-out both;
 }
 
-.hero-logo {
-  display: block;
-  width: min(18.5rem, 86%);
-  height: auto;
-  margin: 0 0 1.35rem;
+.hero h1 {
+  margin-bottom: 0.85rem;
 }
 
 h1,
@@ -375,14 +364,12 @@ ul:last-child {
 .footer-brand {
   display: inline-block;
   width: max-content;
+  color: var(--ink);
   text-decoration: none;
 }
 
-.footer-logo {
-  display: block;
-  width: 8.5rem;
-  height: auto;
-  margin-bottom: 0.35rem;
+.footer-brand .wordmark {
+  font-size: 1.05rem;
 }
 
 .footer-emails {
