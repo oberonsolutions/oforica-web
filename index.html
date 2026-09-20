@@ -8,13 +8,27 @@
       name="description"
       content="Oforica is an OG Holdings company running an Amazon FBA retail-arbitrage pilot. Contact ori@oforica.com."
     />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f3eb" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161410" />
+    <link rel="icon" href="assets/oforica.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,650&amp;display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <a class="skip-link" href="#home" data-i18n="skipToContent">Skip to content</a>
     <header class="site-header">
       <div class="wrap">
-        <a class="wordmark" href="#home" data-i18n="wordmark">Oforica</a>
+        <a class="brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/oforica.svg" alt="" width="410" height="232" />
+          </span>
+          <span class="wordmark" data-i18n="wordmark">Oforica</span>
+        </a>
         <nav aria-label="Primary">
           <a href="#home" data-i18n="navHome">Home</a>
           <a href="#about" data-i18n="navAbout">About</a>
@@ -24,71 +38,98 @@
     </header>
 
     <main>
-      <section id="home">
-        <div class="wrap">
-          <h1 data-i18n="homeHeading">Oforica</h1>
+      <section id="home" class="hero" aria-labelledby="home-heading">
+        <div class="hero-atmosphere" aria-hidden="true"></div>
+        <div class="wrap hero-inner">
+          <img
+            class="hero-logo"
+            src="assets/oforica.svg"
+            width="410"
+            height="232"
+            alt=""
+          />
+          <h1 id="home-heading" class="visually-hidden" data-i18n="homeHeading">Oforica</h1>
           <p class="lede" data-i18n="homeLede">Retail ops for Amazon FBA — focused on retail arbitrage.</p>
-          <p data-i18n="homeBody1">
-            We source proven retail products, list them on Amazon, and fulfill through FBA. Lean
-            process, tight inventory discipline, no ad-heavy growth theater.
-          </p>
-          <p data-i18n="homeBody2">
-            Oforica is an OG Holdings company running a focused Amazon FBA retail-arbitrage pilot.
-          </p>
+          <div class="hero-copy">
+            <p data-i18n="homeBody1">
+              We source proven retail products, list them on Amazon, and fulfill through FBA. Lean
+              process, tight inventory discipline, no ad-heavy growth theater.
+            </p>
+            <p data-i18n="homeBody2">
+              Oforica is an OG Holdings company running a focused Amazon FBA retail-arbitrage pilot.
+            </p>
+          </div>
           <p class="inpage-links">
-            <a href="#about" data-i18n="navAbout">About</a>
-            <span aria-hidden="true"> · </span>
-            <a href="#contact" data-i18n="navContact">Contact</a>
+            <a class="text-link" href="#about" data-i18n="navAbout">About</a>
+            <a class="text-link" href="#contact" data-i18n="navContact">Contact</a>
           </p>
         </div>
       </section>
 
-      <section id="about">
+      <section id="about" aria-labelledby="about-heading">
         <div class="wrap">
-          <h2 data-i18n="aboutHeading">About</h2>
-          <p data-i18n="aboutBody">
+          <h2 id="about-heading" data-i18n="aboutHeading">About</h2>
+          <p class="section-lead" data-i18n="aboutBody">
             Oforica LLC is the operating company behind this pilot: find retail opportunities, buy
             inventory, list on Amazon, and ship through Fulfillment by Amazon.
           </p>
-          <h3 data-i18n="whatWeAreHeading">What we are (this phase):</h3>
-          <ul data-i18n-list="whatWeAre">
-            <li>Retail arbitrage into Amazon FBA</li>
-            <li>Small, deliberate assortment — quality of turns over catalog size</li>
-            <li>Operator-led, bot-assisted workflow where it earns its keep</li>
-          </ul>
-          <h3 data-i18n="whatWeAreNotHeading">What we are not (this phase):</h3>
-          <ul data-i18n-list="whatWeAreNot">
-            <li>Influencer or model promotion</li>
-            <li>Social media marketing agency</li>
-            <li>A public storefront or Shopify shop</li>
-            <li>Paid-ads growth experiments without Jim’s go-ahead</li>
-          </ul>
-          <p data-i18n="legalEntity">
+          <div class="card-grid">
+            <article class="card">
+              <h3 data-i18n="whatWeAreHeading">What we are (this phase):</h3>
+              <ul data-i18n-list="whatWeAre">
+                <li>Retail arbitrage into Amazon FBA</li>
+                <li>Small, deliberate assortment — quality of turns over catalog size</li>
+                <li>Operator-led, bot-assisted workflow where it earns its keep</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3 data-i18n="whatWeAreNotHeading">What we are not (this phase):</h3>
+              <ul data-i18n-list="whatWeAreNot">
+                <li>Influencer or model promotion</li>
+                <li>Social media marketing agency</li>
+                <li>A public storefront or Shopify shop</li>
+                <li>Paid-ads growth experiments without Jim’s go-ahead</li>
+              </ul>
+            </article>
+          </div>
+          <p class="legal-entity" data-i18n="legalEntity">
             Legal entity: Oforica LLC (Sheridan, WY, USA). Parent context: OG Holdings.
           </p>
         </div>
       </section>
 
-      <section id="contact">
+      <section id="contact" aria-labelledby="contact-heading">
         <div class="wrap">
-          <h2 data-i18n="contactHeading">Contact</h2>
-          <p>
-            <span data-i18n="contactPilot">Business / pilot questions:</span>
-            <a href="mailto:ori@oforica.com">ori@oforica.com</a>
-          </p>
-          <p>
-            <span data-i18n="contactInbox">General inbox:</span>
-            <a href="mailto:inbox@oforica.com">inbox@oforica.com</a>
-          </p>
+          <h2 id="contact-heading" data-i18n="contactHeading">Contact</h2>
+          <div class="contact-list">
+            <p class="contact-row">
+              <span data-i18n="contactPilot">Business / pilot questions:</span>
+              <a href="mailto:ori@oforica.com">ori@oforica.com</a>
+            </p>
+            <p class="contact-row">
+              <span data-i18n="contactInbox">General inbox:</span>
+              <a href="mailto:inbox@oforica.com">inbox@oforica.com</a>
+            </p>
+          </div>
           <p class="domicile" data-i18n="domicile">Oforica LLC, Sheridan, WY, USA</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="wrap">
+      <div class="wrap footer-inner">
+        <a class="footer-brand" href="#home">
+          <img
+            class="footer-logo"
+            src="assets/oforica.svg"
+            width="410"
+            height="232"
+            alt=""
+          />
+          <span class="visually-hidden" data-i18n="wordmark">Oforica</span>
+        </a>
         <p data-i18n="footerCopyright">© 2026 Oforica LLC</p>
-        <p>
+        <p class="footer-emails">
           <a href="mailto:ori@oforica.com">ori@oforica.com</a>
           <span aria-hidden="true"> · </span>
           <a href="mailto:inbox@oforica.com">inbox@oforica.com</a>
