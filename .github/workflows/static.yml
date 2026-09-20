@@ -48,6 +48,13 @@ jobs:
           test -f _site/js/site.js
           test ! -d _site/badangel2311
           test ! -d _site/img
+          test ! -d _site/assets
+          test ! -f assets/oforica.svg
+          test ! -f assets/oforica-mark.svg
+          if grep -R -E 'oforica\.svg|oforica-mark\.svg' _site; then
+            echo "Retired lens-mark assets referenced in staged site" >&2
+            exit 1
+          fi
       - name: Confirm retired strings are gone
         run: |
           if grep -R -E 'firebaseConfig|gtag|G-DP5NR5KHR5|onlyfans|info@oforica.com|307-222-2070|under construction|Latin America' _site; then
